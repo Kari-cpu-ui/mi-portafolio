@@ -1,432 +1,399 @@
 <div class="portfolio">
 
   <!-- CABECERA -->
-
   <header class="navbar">
 
+    <!-- NOMBRE Y PROFESIÓN -->
+    <a class="logo" href="#inicio" aria-label="Karina Medero, inicio">
+      <span class="logo-inicial">Karina Medero<span class="logo-punto">.</span></span>
+      <small>Developer Full Stack</small>
+    </a>
 
-<!-- NOMBRE Y PROFESIÓN -->
-<a class="logo" href="#inicio" aria-label="Karina Medero, inicio">
-  <span class="logo-inicial">Karina Medero<span class="logo-punto">.</span></span>
-  <small>Developer Full Stack</small>
-</a>
+    <!-- MENÚ PRINCIPAL -->
+    <nav aria-label="Navegación principal">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#tecnologias">Tecnologías</a>
+      <a href="#contacto" class="nav-contacto">
+        Contacto <span aria-hidden="true">↗</span>
+      </a>
+    </nav>
 
-<!-- MENÚ PRINCIPAL -->
-<nav aria-label="Navegación principal">
-  <a href="#sobre-mi">Sobre mí</a>
-  <a href="#proyectos">Proyectos</a>
-  <a href="#tecnologias">Tecnologías</a>
-  <a href="#contacto" class="nav-contacto">
-    Contacto <span aria-hidden="true">↗</span>
-  </a>
-</nav>
-
-<!-- INFORMACIÓN LATERAL -->
-<div class="navbar-derecha">
-  <aside class="lateral-info" aria-label="Hora local">
-    <span class="lateral-ciudad">Madrid</span>
-    <span class="lateral-linea" aria-hidden="true"></span>
-    <time class="lateral-hora">{{ horaMadrid() }}</time>
-  </aside>
-</div>
-
+    <!-- INFORMACIÓN LATERAL -->
+    <div class="navbar-derecha">
+      <aside class="lateral-info" aria-label="Hora local">
+        <span class="lateral-ciudad">Madrid</span>
+        <span class="lateral-linea" aria-hidden="true"></span>
+        <time class="lateral-hora">{{ horaMadrid() }}</time>
+      </aside>
+    </div>
 
   </header>
 
   <main>
 
-<!-- PORTADA PRINCIPAL -->
-<section id="inicio" class="hero">
-
-  <!-- FONDO DECORATIVO -->
-  <div class="hero-fondo" aria-hidden="true">
-    <div class="luz luz-uno"></div>
-    <div class="luz luz-dos"></div>
-    <div class="rejilla"></div>
-  </div>
-
-  <!-- PRESENTACIÓN -->
-  <div class="hero-content">
-
-    <p class="eyebrow">
-      <span class="estado-punto" aria-hidden="true"></span>
-      PORTAFOLIO · DESARROLLO DE SOFTWARE
-    </p>
-
-    <h1>
-      Construyo ideas
-      <span>con código.</span>
-    </h1>
-
-    <p class="hero-subtitulo">
-      Desarrolladora Full Stack Junior
-    </p>
-
-    <!-- TECNOLOGÍAS PRINCIPALES -->
-    <p class="tecnologias-resumen">
-      <span>Python</span>
-      <span class="separador" aria-hidden="true">/</span>
-      <span>FastAPI</span>
-      <span class="separador" aria-hidden="true">/</span>
-      <span>Angular</span>
-    </p>
-
-    <!-- DESCRIPCIÓN -->
-    <p class="descripcion">
-      Desarrollo aplicaciones web conectando interfaces modernas
-      con soluciones backend. Me gusta resolver problemas,
-      aprender nuevas tecnologías y convertir ideas en proyectos reales.
-    </p>
-
-    <!-- BOTONES PRINCIPALES -->
-    <div class="hero-buttons">
-
-      <!-- BOTONES PRINCIPALES -->
-
-<div class="hero-buttons">
-
-  <a class="boton boton-principal" href="#proyectos">
-    Explorar proyectos
-    <span aria-hidden="true">↗</span>
-  </a>
-
-  <a class="boton boton-principal" href="#contacto">
-    Contactar
-  </a>
-
-
-<a
-class="boton boton-principal"
-href="/cv-karina-medero.pdf"
-download
-
->
-
-Descargar CV <span aria-hidden="true">↓</span> </a>
-
-
-</div>
-
-
-
-    </div>
-
-    <!-- PIE DE PORTADA -->
-    <div class="hero-pie">
-      <span>DESARROLLO WEB</span>
-      <span class="hero-pie-linea" aria-hidden="true"></span>
-      <span>APRENDIZAJE CONTINUO</span>
-    </div>
-
-  </div>
-
-
-  <!-- FOTOGRAFÍA Y TECNOLOGÍAS FLOTANTES -->
-  <div class="hero-visual" aria-label="Mi perfil tecnológico">
-
-    <!-- ÓRBITAS DECORATIVAS -->
-    <div class="orbita orbita-externa" aria-hidden="true"></div>
-    <div class="orbita orbita-interna" aria-hidden="true"></div>
-    <div class="halo-foto" aria-hidden="true"></div>
-
-    <!-- FOTOGRAFÍA -->
-    <div class="foto-contenedor">
-      <img
-        src="/images/img.karina.jpg"
-        alt="Fotografía de Karina Medero"
-        fetchpriority="high"
-      >
-    </div>
-
-    <!-- PYTHON -->
-    <div class="tech-float tech-python">
-      <span class="tech-simbolo" aria-hidden="true">Py</span>
-      <span>Python</span>
-    </div>
-
-    <!-- ANGULAR -->
-    <div class="tech-float tech-angular">
-      <span class="tech-simbolo" aria-hidden="true">A</span>
-      <span>Angular</span>
-    </div>
-
-    <!-- FASTAPI -->
-    <div class="tech-float tech-fastapi">
-      <span class="tech-simbolo" aria-hidden="true">API</span>
-      <span>FastAPI</span>
-    </div>
-
-    <!-- TYPESCRIPT -->
-    <div class="tech-float tech-typescript">
-      <span class="tech-simbolo" aria-hidden="true">TS</span>
-      <span>TypeScript</span>
-    </div>
-
-    <!-- MYSQL -->
-    <div class="tech-float tech-mysql">
-      <span class="tech-simbolo" aria-hidden="true">SQL</span>
-      <span>MySQL</span>
-    </div>
-
-    <!-- GITHUB -->
-    <div class="tech-float tech-git">
-      <span class="tech-simbolo" aria-hidden="true">Git</span>
-      <span>GitHub</span>
-    </div>
-
-  </div>
-
-  <!-- INDICADOR DE DESPLAZAMIENTO -->
-  <a
-    href="#tecnologias"
-    class="indicador-scroll"
-    aria-label="Descubrir mis tecnologías"
-  >
-    <span aria-hidden="true"></span>
-    DESCUBRE MI TRABAJO
-  </a>
-
-</section>
-
-
-<!-- TECNOLOGÍAS -->
-<section id="tecnologias" class="seccion tecnologias">
-
-  <p class="eyebrow">
-    01 — HERRAMIENTAS Y TECNOLOGÍAS
-  </p>
-
-  <h2>
-    Las herramientas detrás
-    <span>de cada proyecto.</span>
-  </h2>
-
-  <p class="seccion-descripcion">
-    Tecnologías que utilizo y con las que continúo desarrollando
-    mis habilidades mediante formación y proyectos prácticos.
-  </p>
-
-  <div class="lista-tecnologias">
-    <span>Python</span>
-    <span>FastAPI</span>
-    <span>Angular</span>
-    <span>TypeScript</span>
-    <span>JavaScript</span>
-    <span>HTML5</span>
-    <span>MySQL</span>
-    <span>Git &amp; GitHub</span>
-  </div>
-
-</section>
-
-
-<!-- SOBRE MÍ -->
-<section id="sobre-mi" class="seccion sobre-mi">
-
-  <p class="eyebrow">
-    02 — UN POCO SOBRE MÍ
-  </p>
-
-  <h2>
-    Curiosidad para aprender.
-    <span>Iniciativa para construir.</span>
-  </h2>
-
-  <p>
-    Estoy desarrollando mis habilidades en programación mediante
-    formación y proyectos prácticos. Me interesa comprender cómo
-    funcionan las aplicaciones de principio a fin, trabajar con
-    frontend y backend, resolver problemas y seguir creciendo
-    como desarrolladora.
-  </p>
-
-</section>
-
-
-<!-- PROYECTOS -->
-<section id="proyectos" class="seccion proyectos">
-
-  <p class="eyebrow">
-    03 — TRABAJO DESTACADO
-  </p>
-
-  <h2>
-    Proyectos
-    <span>destacados.</span>
-  </h2>
-
-  <!-- PROYECTO: MI PERIÓDICO -->
-  <article class="proyecto-card">
-
-    <div class="proyecto-cabecera">
-      <span class="proyecto-numero">01 / PROYECTO</span>
-      <span class="proyecto-estado">EN DESARROLLO</span>
-    </div>
-
-    <h3>Mi Periódico</h3>
-
-    <p>
-      Aplicación web de noticias que conecta un frontend desarrollado
-      con Angular y un backend en Python y FastAPI. Incluye gestión
-      de artículos y usuarios, autenticación y recopilación automática
-      de noticias. También estoy trabajando en el procesamiento de
-      noticias mediante Kafka.
-    </p>
-
-    <!-- TECNOLOGÍAS DEL PROYECTO -->
-    <div class="lista-tecnologias proyecto-tecnologias">
-      <span>Angular</span>
-      <span>Python</span>
-      <span>FastAPI</span>
-      <span>MySQL</span>
-      <span>Kafka</span>
-    </div>
-
-    <div class="proyecto-pie">
-      <span>DESARROLLO FULL STACK</span>
-      <span class="proyecto-flecha" aria-hidden="true">↗</span>
-    </div>
-
-  </article>
-
-
-  <!-- PROYECTO: CRM PIZZERÍA -->
-  <article class="proyecto-card">
-
-    <div class="proyecto-cabecera">
-      <span class="proyecto-numero">02 / PROYECTO</span>
-      <span class="proyecto-estado">BOOTCAMP</span>
-    </div>
-
-    <h3>CRM para Pizzería</h3>
-
-    <p>
-      Aplicación desarrollada durante mi bootcamp de Desarrollo Full Stack
-      para la gestión de un restaurante de pizzas. Proyecto en el que puse
-      en práctica mis conocimientos de desarrollo frontend, backend y
-      gestión de datos.
-    </p>
-
-    <!-- TECNOLOGÍAS DEL PROYECTO -->
-    <div class="lista-tecnologias proyecto-tecnologias">
-      <span>Angular</span>
-      <span>TypeScript</span>
-      <span>JavaScript</span>
-      <span>Python</span>
-      <span>FastAPI</span>
-      <span>MySQL</span>
-    </div>
-
-    <div class="proyecto-pie">
-
-      <span>DESARROLLO FULL STACK</span>
-
-      <div class="proyecto-enlaces">
-
-<a
-class="boton boton-principal"
-href="https://github.com/Kari-cpu-ui/crm-restaurant-frontend"
-target="_blank"
-rel="noopener noreferrer"
-
->
-Frontend <span aria-hidden="true">↗</span>
-
-  </a>
-
-<a
-class="boton boton-principal"
-href="https://github.com/Kari-cpu-ui/crm-restaurant-backend"
-target="_blank"
-rel="noopener noreferrer"
-
->
-
-Backend <span aria-hidden="true">↗</span>
-
-  </a>
-
-</div>
-
+    <!-- PORTADA PRINCIPAL -->
+    <section id="inicio" class="hero">
+
+      <!-- FONDO DECORATIVO -->
+      <div class="hero-fondo" aria-hidden="true">
+        <div class="luz luz-uno"></div>
+        <div class="luz luz-dos"></div>
+        <div class="rejilla"></div>
+      </div>
+
+      <!-- PRESENTACIÓN -->
+      <div class="hero-content">
+
+        <p class="eyebrow">
+          <span class="estado-punto" aria-hidden="true"></span>
+          PORTAFOLIO · DESARROLLO DE SOFTWARE
+        </p>
+
+        <h1>
+          Construyo ideas
+          <span>con código.</span>
+        </h1>
+
+        <p class="hero-subtitulo">
+          Desarrolladora Full Stack Junior
+        </p>
+
+        <!-- TECNOLOGÍAS PRINCIPALES -->
+        <p class="tecnologias-resumen">
+          <span>Python</span>
+          <span class="separador" aria-hidden="true">/</span>
+          <span>FastAPI</span>
+          <span class="separador" aria-hidden="true">/</span>
+          <span>Angular</span>
+        </p>
+
+        <!-- DESCRIPCIÓN -->
+        <p class="descripcion">
+          Desarrollo aplicaciones web conectando interfaces modernas
+          con soluciones backend. Me gusta resolver problemas,
+          aprender nuevas tecnologías y convertir ideas en proyectos reales.
+        </p>
+
+        <!-- BOTONES PRINCIPALES -->
+        <div class="hero-buttons">
+          <a class="boton boton-principal" href="#proyectos">
+            Explorar proyectos
+            <span aria-hidden="true">↗</span>
+          </a>
+
+          <a class="boton boton-secundario" href="#contacto">
+            Contactar
+          </a>
+
+          <a
+            class="boton boton-secundario"
+            href="/cv-karina-medero.pdf"
+            download
+          >
+            Descargar CV
+            <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <!-- PIE DE PORTADA -->
+        <div class="hero-pie">
+          <span>DESARROLLO WEB</span>
+          <span class="hero-pie-linea" aria-hidden="true"></span>
+          <span>APRENDIZAJE CONTINUO</span>
+        </div>
 
       </div>
 
+      <!-- FOTOGRAFÍA Y TECNOLOGÍAS FLOTANTES -->
+      <div class="hero-visual" aria-label="Mi perfil tecnológico">
 
-  </article>
+        <!-- ÓRBITAS DECORATIVAS -->
+        <div class="orbita orbita-externa" aria-hidden="true"></div>
+        <div class="orbita orbita-interna" aria-hidden="true"></div>
+        <div class="halo-foto" aria-hidden="true"></div>
 
-</section>
+        <!-- FOTOGRAFÍA -->
+        <div class="foto-contenedor">
+          <img
+            src="/images/img.karina.jpg"
+            alt="Fotografía de Karina Medero"
+            fetchpriority="high"
+          >
+        </div>
 
+        <!-- PYTHON -->
+        <div class="tech-float tech-python">
+          <span class="tech-simbolo" aria-hidden="true">Py</span>
+          <span>Python</span>
+        </div>
 
-<!-- CONTACTO -->
-<section id="contacto" class="seccion contacto">
+        <!-- ANGULAR -->
+        <div class="tech-float tech-angular">
+          <span class="tech-simbolo" aria-hidden="true">A</span>
+          <span>Angular</span>
+        </div>
 
-  <p class="eyebrow">
-    04 — ¿HABLAMOS?
-  </p>
+        <!-- FASTAPI -->
+        <div class="tech-float tech-fastapi">
+          <span class="tech-simbolo" aria-hidden="true">API</span>
+          <span>FastAPI</span>
+        </div>
 
-  <h2>
-    El siguiente paso
-    <span>empieza aquí.</span>
-  </h2>
+        <!-- TYPESCRIPT -->
+        <div class="tech-float tech-typescript">
+          <span class="tech-simbolo" aria-hidden="true">TS</span>
+          <span>TypeScript</span>
+        </div>
 
-  <p>
-    Busco una oportunidad junior donde pueda aportar mis conocimientos,
-    colaborar en proyectos reales y continuar creciendo profesionalmente.
-  </p>
+        <!-- MYSQL -->
+        <div class="tech-float tech-mysql">
+          <span class="tech-simbolo" aria-hidden="true">SQL</span>
+          <span>MySQL</span>
+        </div>
 
-  <!-- CONTACTO POR CORREO -->
-  <a
-    class="boton boton-principal"
-    href="mailto:mederokarina38@gmail.com?subject=Oportunidad%20profesional"
-  >
-    Hablemos de oportunidades
-    <span aria-hidden="true">↗</span>
-  </a>
+        <!-- GITHUB -->
+        <div class="tech-float tech-git">
+          <span class="tech-simbolo" aria-hidden="true">Git</span>
+          <span>GitHub</span>
+        </div>
 
-  <!-- CONTACTO POR LINKEDIN -->
-  <a
-    class="boton boton-secundario"
-    href="https://www.linkedin.com/in/karina-medero-a6a0b223b/"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Conectar en LinkedIn
-    <span aria-hidden="true">↗</span>
-  </a>
+      </div>
 
-</section>
+      <!-- INDICADOR DE DESPLAZAMIENTO -->
+      <a
+        href="#tecnologias"
+        class="indicador-scroll"
+        aria-label="Descubrir mis tecnologías"
+      >
+        <span aria-hidden="true"></span>
+        DESCUBRE MI TRABAJO
+      </a>
+
+    </section>
+
+    <!-- TECNOLOGÍAS -->
+    <section id="tecnologias" class="seccion tecnologias">
+
+      <p class="eyebrow">
+        01 — HERRAMIENTAS Y TECNOLOGÍAS
+      </p>
+
+      <h2>
+        Las herramientas detrás
+        <span>de cada proyecto.</span>
+      </h2>
+
+      <p class="seccion-descripcion">
+        Tecnologías que utilizo y con las que continúo desarrollando
+        mis habilidades mediante formación y proyectos prácticos.
+      </p>
+
+      <div class="lista-tecnologias">
+        <span>Python</span>
+        <span>FastAPI</span>
+        <span>Angular</span>
+        <span>TypeScript</span>
+        <span>JavaScript</span>
+        <span>HTML5</span>
+        <span>MySQL</span>
+        <span>Git &amp; GitHub</span>
+      </div>
+
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi" class="seccion sobre-mi">
+
+      <p class="eyebrow">
+        02 — UN POCO SOBRE MÍ
+      </p>
+
+      <h2>
+        Curiosidad para aprender.
+        <span>Iniciativa para construir.</span>
+      </h2>
+
+      <p>
+        Estoy desarrollando mis habilidades en programación mediante
+        formación y proyectos prácticos. Me interesa comprender cómo
+        funcionan las aplicaciones de principio a fin, trabajar con
+        frontend y backend, resolver problemas y seguir creciendo
+        como desarrolladora.
+      </p>
+
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="seccion proyectos">
+
+      <p class="eyebrow">
+        03 — TRABAJO DESTACADO
+      </p>
+
+      <h2>
+        Proyectos
+        <span>destacados.</span>
+      </h2>
+
+      <!-- PROYECTO: MI PERIÓDICO -->
+      <article class="proyecto-card">
+
+        <div class="proyecto-cabecera">
+          <span class="proyecto-numero">01 / PROYECTO</span>
+          <span class="proyecto-estado">EN DESARROLLO</span>
+        </div>
+
+        <h3>Mi Periódico</h3>
+
+        <p>
+          Aplicación web de noticias que conecta un frontend desarrollado
+          con Angular y un backend en Python y FastAPI. Incluye gestión
+          de artículos y usuarios, autenticación y recopilación automática
+          de noticias. También estoy trabajando en el procesamiento de
+          noticias mediante Kafka.
+        </p>
+
+        <!-- TECNOLOGÍAS DEL PROYECTO -->
+        <div class="lista-tecnologias proyecto-tecnologias">
+          <span>Angular</span>
+          <span>Python</span>
+          <span>FastAPI</span>
+          <span>MySQL</span>
+          <span>Kafka</span>
+        </div>
+
+        <div class="proyecto-pie">
+          <span>DESARROLLO FULL STACK</span>
+          <span class="proyecto-flecha" aria-hidden="true">↗</span>
+        </div>
+
+      </article>
+
+      <!-- PROYECTO: CRM PIZZERÍA -->
+      <article class="proyecto-card">
+
+        <div class="proyecto-cabecera">
+          <span class="proyecto-numero">02 / PROYECTO</span>
+          <span class="proyecto-estado">BOOTCAMP</span>
+        </div>
+
+        <h3>CRM para Pizzería</h3>
+
+        <p>
+          Aplicación desarrollada durante mi bootcamp de Desarrollo Full Stack
+          para la gestión de un restaurante de pizzas. Proyecto en el que puse
+          en práctica mis conocimientos de desarrollo frontend, backend y
+          gestión de datos.
+        </p>
+
+        <!-- TECNOLOGÍAS DEL PROYECTO -->
+        <div class="lista-tecnologias proyecto-tecnologias">
+          <span>Angular</span>
+          <span>TypeScript</span>
+          <span>JavaScript</span>
+          <span>Python</span>
+          <span>FastAPI</span>
+          <span>MySQL</span>
+        </div>
+
+        <div class="proyecto-pie">
+
+          <span>DESARROLLO FULL STACK</span>
+
+          <div class="proyecto-enlaces">
+            <a
+              class="boton boton-principal"
+              href="https://github.com/Kari-cpu-ui/crm-restaurant-frontend"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Frontend
+              <span aria-hidden="true">↗</span>
+            </a>
+
+            <a
+              class="boton boton-principal"
+              href="https://github.com/Kari-cpu-ui/crm-restaurant-backend"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Backend
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+
+        </div>
+
+      </article>
+
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="seccion contacto">
+
+      <p class="eyebrow">
+        04 — ¿HABLAMOS?
+      </p>
+
+      <h2>
+        El siguiente paso
+        <span>empieza aquí.</span>
+      </h2>
+
+      <p>
+        Busco una oportunidad junior donde pueda aportar mis conocimientos,
+        colaborar en proyectos reales y continuar creciendo profesionalmente.
+      </p>
+
+      <!-- CONTACTO POR CORREO -->
+      <a
+        class="boton boton-principal"
+        href="mailto:mederokarina38@gmail.com?subject=Oportunidad%20profesional"
+      >
+        Hablemos de oportunidades
+        <span aria-hidden="true">↗</span>
+      </a>
+
+      <!-- CONTACTO POR LINKEDIN -->
+      <a
+        class="boton boton-secundario"
+        href="https://www.linkedin.com/in/karina-medero-a6a0b223b/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Conectar en LinkedIn
+        <span aria-hidden="true">↗</span>
+      </a>
+
+    </section>
 
   </main>
 
   <!-- PIE DE PÁGINA -->
-
   <footer>
-<p>
-  KARINA<span>.</span>
-  · Diseñado y desarrollado con dedicación.
-</p>
+    <p>
+      KARINA<span>.</span>
+      · Diseñado y desarrollado con dedicación.
+    </p>
 
-<div class="footer-redes">
+    <div class="footer-redes">
+      <a
+        href="https://www.linkedin.com/in/karina-medero-a6a0b223b/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="LinkedIn de Karina"
+      >
+        LinkedIn
+      </a>
 
-  <a
-    href="https://www.linkedin.com/in/karina-medero-a6a0b223b/"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="LinkedIn de Karina"
-  >
-    LinkedIn
-  </a>
-
-  <a
-    href="mailto:mederokarina38@gmail.com"
-    aria-label="Enviar correo a Karina"
-  >
-    Email
-  </a>
-
-</div>
-
-
+      <a
+        href="mailto:mederokarina38@gmail.com"
+        aria-label="Enviar correo a Karina"
+      >
+        Email
+      </a>
+    </div>
   </footer>
 
 </div>
